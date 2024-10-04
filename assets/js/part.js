@@ -7,6 +7,7 @@ $('.side-navbar').html(`
         <li class="list-group-item"><a href="/card.html">Card Set</a></li>
         <li class="list-group-item"><a href="/form.html">Form</a></li>
         <li class="list-group-item"><a href="/formatting.html">Formatting</a></li>
+        <li class="list-group-item"><a href="/layout.html">Layout</a></li>
         <li class="list-group-item"><a href="/table.html">Table</a></li>
         <li class="divider"></li>
         <li class="list-group-item"><a href="/collapsible.html">Collapsible</a></li>

@@ -5,6 +5,7 @@
 :root {
     --font: 'Poppins';
     --font-2: 'Space Mono';
+    --font-3: 'Caveat';
     --font-form: 'Space Mono';
     --font-msr: 'Material Symbols Rounded';
     --font-regular: 400;
@@ -88,17 +89,4 @@
     --white25: #FFFFFF25;
     --white35: #FFFFFF35;
     --white45: #FFFFFF45;
-}
-
-.dark:root {
-    --bg: #1C1B1F;
-    --txt: #E4E4E7;
-}
-
-.btn>span:not([class]) {
-    padding-bottom: 0;
-}
-
-.tooltip-text {
-    border-bottom: 0 solid transparent
 }
