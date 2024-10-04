@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-id">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Magia Lite</title>
+    <link rel="icon" href="/assets/img/favicon.png" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/magia-lite.css" />
+    <link rel="stylesheet" href="/assets/css/template.css" />
+
+    <!-- JS -->
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <section class="side-navbar"></section>
+
+    <!-- # -->
+
+    <section class="page-title">
+        <div class="container">
+            <h1>Form</h1>
+        </div>
+    </section>
+
+    <!-- # -->
+
+    <main>
+        <div class="container">
+
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" placeholder="Username">
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <p class="help-block">Example block-level help text here.</p>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label>Disabled / Placeholder</label>
+                <input type="text" class="form-control" placeholder="Disabled" disabled>
+                <div class="form-control placeholder"><span>Placeholder</span></div>
+                <input type="text" class="form-control" placeholder="Read-only" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>Select Input</label>
+                <div class="form-control-select">
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Input with Icon</label>
+                <div class="form-control-icon">
+                    <span class="material-symbol">search</span>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <div class="form-control-icon">
+                    <input type="text" class="form-control" placeholder="Password">
+                    <span class="material-symbol solid">visibility</span>
+                </div>
+            </div>
+
+            <h5 class="hdiv">Form Horizontal</h5>
+            <div class="form-hz">
+                <div class="form-group">
+                    <label class="w-30">Username<abbr><sup>*</sup></abbr></label>
+                    <input type="text" class="form-control flex-1 w-360" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label class="w-30">Password<abbr><sup>*</sup></abbr></label>
+                    <input type="password" class="form-control flex-1 w-360" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div class="w-30"></div>
+                    <div class="form-opt-checkbox">
+                        <label><input type="checkbox" name="" id=""><span class="mark"></span><span>Remember me</span></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="w-30"></div>
+                    <a href="#" class="btn btn-primary"><span>Sign in</span><span class="material-symbol">login</span></a>
+                    <span class="ml-16" style="color:var(--g3x)">or</span>
+                    <a href="#">Register</a>
+                </div>
+            </div>
+
+            <h5 class="hdiv">Input Group</h5>
+            <div class="input-group">
+                <span class="input-group-addon"><span>Username</span></span>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><span>Password</span></span>
+                <input type="text" class="form-control" placeholder="Password">
+                <input type="text" class="form-control" placeholder="Repeat Password">
+                <span class="input-group-addon"><span>Forget?</span></span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><span>Email</span></span>
+                <input type="text" class="form-control" placeholder="Email">
+                <a href="#" class="btn btn-success"><span>Sent</span></a>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><span class="material-symbol">search</span></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <a href="#" class="btn btn-outline btn-default"><span class="material-symbol">filter_list</span><span>Filter</span></a>
+                <a href="#" class="btn btn-outline btn-default"><span>Sort</span><span class="material-symbol">expand_more</span></a>
+            </div>
+
+            <h5 class="hdiv">Checkbox</h5>
+            <div class="flex-v gap-12">
+                <div class="form-opt-checkbox">
+                    <label><input type="checkbox" name="" id=""><span class="mark"></span><span>Checkbox</span></label>
+                </div>
+                <div class="form-opt-radio">
+                    <label><input type="radio" name="asdas" id=""><span class="mark"></span><span>Radio Option 1</span></label>
+                </div>
+                <div class="form-opt-radio">
+                    <label><input type="radio" name="asdas" id=""><span class="mark"></span><span>Radio Option 2</span></label>
+                </div>
+                <div class="form-opt-radio">
+                    <label><input type="radio" name="asdas" id="" disabled><span class="mark"></span><span>Radio Option 2</span></label>
+                </div>
+                <hr class="mv-12">
+                <div class="form-opt-toggle">
+                    <label><input type="checkbox" name="" id=""><span class="mark"></span><span>Toggle</span></label>
+                </div>
+                <hr class="mv-12">
+                <div class="form-opt-toggle reverse">
+                    <label><input type="checkbox" name="" id=""><span class="mark"></span><span>Toggle</span></label>
+                </div>
+            </div>
+
+            <h5 class="hdiv">Textarea</h5>
+            <div class="form-group">
+                <label>Message</label>
+                <div class="form-control-textarea">
+                    <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Auto Height</label>
+                <textarea class="form-control auto-height" rows="1" placeholder="Auto Height"></textarea>
+            </div>
+
+            <h5 class="hdiv">Underline</h5>
+            <div class="form underline">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <div class="form-control-textarea">
+                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="hdiv">Floating Label</h5>
+            <div class="form-group floating-label">
+                <label><span>Floating Label</span></label>
+                <input type="text" class="form-control" placeholder="Floating Label">
+            </div>
+
+            <div class="form-group floating-label">
+                <label><span>Select Input</span></label>
+                <div class="form-control-select">
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group floating-label">
+                <label><span>Message</span></label>
+                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+            </div>
+
+            <div class="form-group floating-label">
+                <label><span>Auto Height</span></label>
+                <textarea class="form-control auto-height" rows="1" placeholder="Auto Height"></textarea>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- # -->
+
+    <script src="/assets/js/part.js"></script>
+    <script src="/assets/js/magia-lite.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/*!
+ * Name: MagiaCSS Layout
+ * Author: Horochoco
+*/
+
+body{padding-left:280px!important}
+main{padding-bottom:60px}
+.page-title{padding:60px 0 48px}
+.container{max-width:1000px}
+
+.side-navbar{position:fixed;top:0;bottom:0;left:0;width:280px;padding:24px;background-color:var(--g0x);border-right:1px solid var(--g2x)}
+.side-navbar .list-group-item{border-radius:0;border:0;padding:0;display:flex;position:relative;background-color:transparent}
+.side-navbar .list-group-item a{display:flex;padding:7px 12px 8px;border-radius:6px;text-transform:lowercase}
+.side-navbar .divider{border-top:1px solid var(--g3x);margin:16px 0}
+.side-navbar .list-group-item a:hover,.side-navbar .list-group-item.active a{background-color:var(--primary25);color:var(--primary-darker);}
+.navbar{padding-left:36px;padding-right:36px;border-bottom:1px solid var(--g2x)}
+
+.hdiv{padding:48px 0 36px}
+.hdiv+.alert,.hdiv+.form-group,.hdiv+.input-group,.hdiv+.floating-label{margin-top:0!important}

@@ -1,0 +1,33 @@
+<svg width="100%" height="100%" viewBox="0 0 3400 3400" version="1.1" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;width:40px;height:40px;transition:.2s ease">
+	<style>
+		svg {
+			fill: #4287f5;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			svg {
+				fill: #fefefe;
+			}
+		}
+	</style>
+	<g transform="matrix(1,0,0,1,-80,-80)">
+		<g transform="matrix(0.707107,-0.707107,0.707107,0.707107,-737.3,1780)">
+			<path d="M2600,600L600,600L600,2600L2600,2600L2600,600ZM2400,800L800,800L800,2400L2400,2400L2400,800Z"></path>
+		</g>
+		<g transform="matrix(0.707107,-0.707107,0.707107,0.707107,-256.468,1780)">
+			<path d="M2250,2250L600,2250L600,2620L2620,2620L2620,600L2250,600L2250,2250M2250,2250L800,2250L800,2420L2420,2420L2420,800L2250,800L2250,2250"></path>
+		</g>
+		<g transform="matrix(0.366377,-0.366377,0.366377,0.366377,684.974,2388.92)">
+			<rect x="742.8" y="238.8" width="1080.8" height="1312.4"></rect>
+		</g>
+		<g transform="matrix(0.366377,-0.366377,0.366377,0.366377,119.288,1823.23)">
+			<rect x="742.8" y="624.8" width="1080.8" height="849.2"></rect>
+		</g>
+		<g transform="matrix(0.366377,-0.366377,0.366377,0.366377,1250.66,1823.23)">
+			<rect x="588.4" y="702" width="1080.8" height="849.2"></rect>
+		</g>
+		<g transform="matrix(0.366377,-0.366377,0.366377,0.366377,684.974,1257.55)">
+			<rect x="588.4" y="624.8" width="1080.8" height="1312.4"></rect>
+		</g>
+	</g>
+</svg>

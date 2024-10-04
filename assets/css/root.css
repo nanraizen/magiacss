@@ -1,0 +1,104 @@
+/*!
+ * Magia - Root
+*/
+
+:root {
+    --font: 'Poppins';
+    --font-2: 'Space Mono';
+    --font-form: 'Space Mono';
+    --font-msr: 'Material Symbols Rounded';
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-size: 16px;
+
+    --backdrop: rgba(24 24 27 / .65);
+    --cubic: cubic-bezier(.58, .01, .04, .98);
+    --img-shadow: 0 2px 6px -2px rgba(0 0 0 / .1);
+    --shadow: 0 4px 24px -4px rgba(0 0 0 / .1);
+
+    --bg: #FFFFFF;
+    --txt: #3F3F46;
+
+    --g0x: #F9FAFB;
+    --g1x: #F4F4F5;
+    --g2x: #E4E4E7;
+    --g3x: #D4D4D8;
+    --g4x: #A1A1AA;
+    --g5x: #71717A;
+    --g6x: #52525B;
+    --odd: rgba(24 24 27 / .04);
+
+    --default: #ECEFF1;
+    --primary: #448AFF;
+    --success: #22C55E;
+    --info: #00BCD4;
+    --warning: #FB923C;
+    --danger: #EF4444;
+    --dark: #3F3F46;
+
+    --white: #FFFFFF;
+    
+    --default-darker: #9CA3AF;
+    --primary-darker: #1565C0;
+    --success-darker: #2E7D32;
+    --info-darker: #00838F;
+    --warning-darker: #FF6F00;
+    --danger-darker: #C62828;
+
+    --primary05: #448AFF05;
+    --primary15: #448AFF15;
+    --primary25: #448AFF25;
+    --primary35: #448AFF35;
+    --primary45: #448AFF45;
+
+    --success05: #22C55E05;
+    --success15: #22C55E15;
+    --success25: #22C55E25;
+    --success35: #22C55E35;
+    --success45: #22C55E45;
+
+    --info05: #00BCD405;
+    --info15: #00BCD415;
+    --info25: #00BCD425;
+    --info35: #00BCD435;
+    --info45: #00BCD445;
+
+    --warning05: #FB923C05;
+    --warning15: #FB923C15;
+    --warning25: #FB923C25;
+    --warning35: #FB923C35;
+    --warning45: #FB923C45;
+
+    --danger05: #EF444405;
+    --danger15: #EF444415;
+    --danger25: #EF444425;
+    --danger35: #EF444435;
+    --danger45: #EF444445;
+
+    --dark05: #3F3F4605;
+    --dark15: #3F3F4615;
+    --dark25: #3F3F4625;
+    --dark35: #3F3F4635;
+    --dark45: #3F3F4645;
+
+    --white05: #FFFFFF05;
+    --white15: #FFFFFF15;
+    --white25: #FFFFFF25;
+    --white35: #FFFFFF35;
+    --white45: #FFFFFF45;
+}
+
+.dark:root {
+    --bg: #1C1B1F;
+    --txt: #E4E4E7;
+}
+
+.btn>span:not([class]) {
+    padding-bottom: 0;
+}
+
+.tooltip-text {
+    border-bottom: 0 solid transparent
+}
