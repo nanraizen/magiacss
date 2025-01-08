@@ -1,7 +1,10 @@
 /*!
- * Name: MagiaCSS Layout
- * Author: Horochoco
+ * Name : MagiaCSS Layout
+ * Author : Horochoco
 */
+
+@import url('font.css');
+@import url('root.css');
 
 /* REPLACEMENT WAJIB */
 .btn>span:not([class]){padding-bottom:0}
@@ -13,6 +16,7 @@
 .formatting.lh2 ul li::before{top:12px}
 .formatting.lh2 ul.check li::before{top:3px}
 .formatting.lh2 ul.icons li .material-symbol,.formatting.lh2 ul.icons li .fab{top:3px}
+[class*='form-opt-'] .mark{top:0}
 
 /* TEMPLATE */
 body{padding-left:280px!important}

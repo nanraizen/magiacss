@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Magia Lite</title>
+    <title>MagiaCSS</title>
     <link rel="icon" href="/assets/img/favicon.png" type="image/svg+xml" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/magia-lite.css" />
+    <link rel="stylesheet" href="/assets/css/magia.css" />
     <link rel="stylesheet" href="/assets/css/template.css" />
 
     <!-- JS -->
@@ -131,26 +131,14 @@
 
             <h5 class="hdiv">Checkbox</h5>
             <div class="flex-v gap-12">
-                <div class="form-opt-checkbox">
-                    <label><input type="checkbox" name="" id=""><span class="mark"></span><span>Checkbox</span></label>
-                </div>
-                <div class="form-opt-radio">
-                    <label><input type="radio" name="asdas" id=""><span class="mark"></span><span>Radio Option 1</span></label>
-                </div>
-                <div class="form-opt-radio">
-                    <label><input type="radio" name="asdas" id=""><span class="mark"></span><span>Radio Option 2</span></label>
-                </div>
-                <div class="form-opt-radio">
-                    <label><input type="radio" name="asdas" id="" disabled><span class="mark"></span><span>Radio Option 2</span></label>
-                </div>
+                <label class="form-opt-checkbox"><input type="checkbox" name="" id=""><span class="mark"></span><span>Checkbox</span></label>
+                <label class="form-opt-radio"><input type="radio" name="asdas" id=""><span class="mark"></span><span>Radio Option 1</span></label>
+                <label class="form-opt-radio"><input type="radio" name="asdas" id=""><span class="mark"></span><span>Radio Option 2</span></label>
+                <label class="form-opt-radio"><input type="radio" name="asdas" id="" disabled><span class="mark"></span><span>Radio Option 2</span></label>
                 <hr class="mv-12">
-                <div class="form-opt-toggle">
-                    <label><input type="checkbox" name="" id=""><span class="mark"></span><span>Toggle</span></label>
-                </div>
+                <label class="form-opt-toggle"><input type="checkbox" name="" id=""><span class="mark"></span><span>Toggle</span></label>
                 <hr class="mv-12">
-                <div class="form-opt-toggle reverse">
-                    <label><input type="checkbox" name="" id=""><span class="mark"></span><span>Toggle</span></label>
-                </div>
+                <label class="form-opt-toggle reverse"><input type="checkbox" name="" id=""><span class="mark"></span><span>Toggle</span></label>
             </div>
 
             <h5 class="hdiv">Textarea</h5>
@@ -176,6 +164,12 @@
                     <label>Message</label>
                     <div class="form-control-textarea">
                         <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="material-symbol fill">account_circle</span></span>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username">
                     </div>
                 </div>
             </div>
@@ -215,7 +209,7 @@
     <!-- # -->
 
     <script src="/assets/js/part.js"></script>
-    <script src="/assets/js/magia-lite.js"></script>
+    <script src="/assets/js/magia.js"></script>
 
 </body>
 

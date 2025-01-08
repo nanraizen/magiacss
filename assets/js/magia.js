@@ -4,7 +4,8 @@ $('a[href="#"]').click(function (e) {
 
 $('img').each(function () {
     var img = $(this)
-    var imgFile = img.attr('src').split('/').pop().split('.')[0]
+    var imgSrc = img.attr('src')
+    var imgFile = imgSrc.substring(imgSrc.lastIndexOf('/') + 1, imgSrc.lastIndexOf('.'))
     var imgAlt = img.attr('alt')
 
     if (!imgAlt) {
@@ -26,7 +27,7 @@ $('.floating-label').each(function () {
 })
 
 // NAVTABS
-$('.navtabs').each(function () {
+$('.navtabs[tab-id]').each(function () {
     var navtabs = $(this)
     var tabsId = navtabs.attr('tab-id')
     var content = $('.navtabs-content[tab-id=' + tabsId + ']')
@@ -43,7 +44,7 @@ $('.navtabs').each(function () {
             $(this).attr('active', 'true')
         }
 
-        content.find('div').removeAttr('active').hide()
+        content.find('*[id]').removeAttr('active').hide()
         $('#' + targetId).attr('active', 'true').show()
     })
 
@@ -93,15 +94,14 @@ $('[tooltip]').each(function () {
 // COPY BTN
 $('.copyBtn').each(function () {
     var copyBtn = $(this)
+    var copyBtnText = copyBtn.attr('copy-content') || ''
 
     copyBtn.on('click', function () {
-        var textToCopy = copyBtn.attr('copy-content')
-
-        navigator.clipboard.writeText(textToCopy).then(() => {
+        navigator.clipboard.writeText(copyBtnText).then(() => {
             var tooltip = copyBtn.find('.tooltip-text')
 
             if (tooltip.length) {
-                tooltip.text('Copied')
+                tooltip.text('Copied' + (copyBtn.hasClass('text-copied') ? ' : ' + copyBtnText : ''))
             }
 
             tooltip.addClass('show')
@@ -111,38 +111,46 @@ $('.copyBtn').each(function () {
                 setTimeout(() => {
                     tooltip.remove()
                 }, 300)
-            }, 1000)
+            }, 2000)
         })
     })
 })
 
 // COPY GROUP
 $('.copyGroup a[copy="trigger"]').each(function () {
-    var copyTrigger = $(this);
+    var copyTrigger = $(this)
 
     copyTrigger.on('click', function () {
-        var inputField = $(this).closest('.copyGroup').find('[copy="content"]');
-        var textToCopy = inputField.val();
+        var inputField = $(this).closest('.copyGroup').find('[copy="content"]')
+        var textToCopy
+
+        if (inputField.is('input') || inputField.is('textarea')) {
+            textToCopy = inputField.val()
+        } else {
+            textToCopy = inputField.text()
+        }
 
         navigator.clipboard.writeText(textToCopy).then(() => {
-            var copyNotification = $('<div class="copy-notification"><span class="material-symbol fill text-success">check_circle</span><span>Copied to Clipboard</span></div>');
+            var copyNotification = $('<div class="copy-notification"><span class="material-symbol fill text-success">check_circle</span><span>Copied to Clipboard</span></div>')
 
-            $('body').append(copyNotification);
+            $('body').append(copyNotification)
             setTimeout(function () {
-                copyNotification.addClass('show');
-            }, 100);
+                copyNotification.addClass('show')
+            }, 100)
 
             setTimeout(function () {
-                copyNotification.removeClass('show');
+                copyNotification.removeClass('show')
                 setTimeout(function () {
-                    copyNotification.remove();
-                }, 500);
-            }, 2000);
+                    copyNotification.remove()
+                }, 500)
+            }, 2000)
 
-            inputField.trigger('focus').select();
-        });
-    });
-});
+            if (inputField.is('input') || inputField.is('textarea')) {
+                inputField.trigger('focus').select()
+            }
+        })
+    })
+})
 
 // DROPDOWN
 $('[dropdown=toggle]').click(function (event) {
@@ -228,4 +236,11 @@ $(document).keydown(function (e) {
         $('.popup').removeClass('open')
         $('[dropdown=content]').removeClass('open')
     }
+})
+
+// UPUP
+$('.upup').on('click', function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 0)
 })
