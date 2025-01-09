@@ -1,0 +1,2 @@
+# Magia CSS
+Magia CSS is a library created to make web development simpler with clean, minimalist styles. It comes with utilities for layout, interactivity, and typography, giving you greater control over your design choices. While having some CSS knowledge is still helpful to make the most of it, Magia CSS aims to streamline your workflow, offering a lightweight solution that balances simplicity with flexibility.
