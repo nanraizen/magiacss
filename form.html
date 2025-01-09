@@ -21,18 +21,17 @@
 
 <body>
 
+    <!-- SIDE NAV -->
     <section class="side-navbar"></section>
 
-    <!-- # -->
-
+    <!-- TITLE -->
     <section class="page-title">
         <div class="container">
             <h1>Form</h1>
         </div>
     </section>
 
-    <!-- # -->
-
+    <!-- CONTENT -->
     <main>
         <div class="container">
 
@@ -81,7 +80,7 @@
             </div>
 
             <h5 class="hdiv">Form Horizontal</h5>
-            <div class="form-hz">
+            <div class="form-hz text-14">
                 <div class="form-group">
                     <label class="w-30">Username<abbr><sup>*</sup></abbr></label>
                     <input type="text" class="form-control flex-1 w-360" placeholder="Username">
@@ -92,41 +91,41 @@
                 </div>
                 <div class="form-group">
                     <div class="w-30"></div>
-                    <div class="form-opt-checkbox">
-                        <label><input type="checkbox" name="" id=""><span class="mark"></span><span>Remember me</span></label>
-                    </div>
+                    <label class="form-opt-checkbox"><input type="checkbox" name="" id=""><span class="mark"></span><span>Remember me</span></label>
                 </div>
                 <div class="form-group">
                     <div class="w-30"></div>
                     <a href="#" class="btn btn-primary"><span>Sign in</span><span class="material-symbol">login</span></a>
-                    <span class="ml-16" style="color:var(--g3x)">or</span>
+                    <span class="mh-16" style="color:var(--g4x)">or</span>
                     <a href="#">Register</a>
                 </div>
             </div>
 
             <h5 class="hdiv">Input Group</h5>
-            <div class="input-group">
-                <span class="input-group-addon"><span>Username</span></span>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Username">
+            <div class="flex-v gap-16">
+                <div class="input-group 2-100">
+                    <span class="input-group-addon"><span>Username</span></span>
+                    <div class="form-group flex-1">
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
                 </div>
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon"><span>Password</span></span>
-                <input type="text" class="form-control" placeholder="Password">
-                <input type="text" class="form-control" placeholder="Repeat Password">
-                <span class="input-group-addon"><span>Forget?</span></span>
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon"><span>Email</span></span>
-                <input type="text" class="form-control" placeholder="Email">
-                <a href="#" class="btn btn-success"><span>Sent</span></a>
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon"><span class="material-symbol">search</span></span>
-                <input type="text" class="form-control" placeholder="Search">
-                <a href="#" class="btn btn-outline btn-default"><span class="material-symbol">filter_list</span><span>Filter</span></a>
-                <a href="#" class="btn btn-outline btn-default"><span>Sort</span><span class="material-symbol">expand_more</span></a>
+                <div class="input-group">
+                    <span class="input-group-addon"><span>Password</span></span>
+                    <input type="text" class="form-control" placeholder="Password">
+                    <input type="text" class="form-control" placeholder="Repeat Password">
+                    <span class="input-group-addon"><span>Forget?</span></span>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span>Email</span></span>
+                    <input type="text" class="form-control" placeholder="Email">
+                    <a href="#" class="btn btn-success"><span>Sent</span></a>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="material-symbol">search</span></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                    <a href="#" class="btn btn-outline btn-default"><span class="material-symbol">filter_list</span><span>Filter</span></a>
+                    <a href="#" class="btn btn-outline btn-default"><span>Sort</span><span class="material-symbol">expand_more</span></a>
+                </div>
             </div>
 
             <h5 class="hdiv">Checkbox</h5>
@@ -166,10 +165,13 @@
                         <textarea class="form-control" rows="3" placeholder="Message"></textarea>
                     </div>
                 </div>
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="material-symbol fill">account_circle</span></span>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Username">
+                <div class="form-group">
+                    <label>Username</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="material-symbol fill">account_circle</span></span>
+                        <div class="form-group flex-1">
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,8 +208,7 @@
         </div>
     </main>
 
-    <!-- # -->
-
+    <!-- BODY JS -->
     <script src="/assets/js/part.js"></script>
     <script src="/assets/js/magia.js"></script>
 

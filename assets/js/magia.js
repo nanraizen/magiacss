@@ -51,121 +51,6 @@ $('.navtabs[tab-id]').each(function () {
     navtabs.find('a[active=true], a.btn-primary').click()
 })
 
-// POPUP
-$('.popup').prepend('<div pop-action="close-overlay"></div>')
-$('[pop-id]').not('.popup').on('click', function () {
-    var popId = $(this).attr('pop-id')
-    $('.popup[pop-id=' + popId + ']').addClass('open')
-})
-
-$('[pop-action=close],[pop-action=close-overlay]').on('click', function () {
-    $('.popup').removeClass('open')
-})
-
-// TOOLTIP
-$('[tooltip]').each(function () {
-    var tooltip = $(this)
-
-    tooltip.hover(
-        function () {
-            var tooltipText = tooltip.attr('tooltip')
-            var tooltipWrapper = $('<div class="tooltip-text">' + tooltipText + '</div>')
-
-            tooltip.append(tooltipWrapper)
-            setTimeout(function () {
-                tooltipWrapper.addClass('show')
-            }, 100)
-        },
-        function () {
-            var tooltipWrapper = tooltip.find('.tooltip-text')
-
-            if ($(this).text().indexOf('Copied') !== -1) {
-                return
-            }
-
-            tooltipWrapper.removeClass('show')
-            setTimeout(function () {
-                tooltipWrapper.remove()
-            }, 150)
-        }
-    )
-})
-
-// COPY BTN
-$('.copyBtn').each(function () {
-    var copyBtn = $(this)
-    var copyBtnText = copyBtn.attr('copy-content') || ''
-
-    copyBtn.on('click', function () {
-        navigator.clipboard.writeText(copyBtnText).then(() => {
-            var tooltip = copyBtn.find('.tooltip-text')
-
-            if (tooltip.length) {
-                tooltip.text('Copied' + (copyBtn.hasClass('text-copied') ? ' : ' + copyBtnText : ''))
-            }
-
-            tooltip.addClass('show')
-
-            setTimeout(() => {
-                tooltip.removeClass('show')
-                setTimeout(() => {
-                    tooltip.remove()
-                }, 300)
-            }, 2000)
-        })
-    })
-})
-
-// COPY GROUP
-$('.copyGroup a[copy="trigger"]').each(function () {
-    var copyTrigger = $(this)
-
-    copyTrigger.on('click', function () {
-        var inputField = $(this).closest('.copyGroup').find('[copy="content"]')
-        var textToCopy
-
-        if (inputField.is('input') || inputField.is('textarea')) {
-            textToCopy = inputField.val()
-        } else {
-            textToCopy = inputField.text()
-        }
-
-        navigator.clipboard.writeText(textToCopy).then(() => {
-            var copyNotification = $('<div class="copy-notification"><span class="material-symbol fill text-success">check_circle</span><span>Copied to Clipboard</span></div>')
-
-            $('body').append(copyNotification)
-            setTimeout(function () {
-                copyNotification.addClass('show')
-            }, 100)
-
-            setTimeout(function () {
-                copyNotification.removeClass('show')
-                setTimeout(function () {
-                    copyNotification.remove()
-                }, 500)
-            }, 2000)
-
-            if (inputField.is('input') || inputField.is('textarea')) {
-                inputField.trigger('focus').select()
-            }
-        })
-    })
-})
-
-// DROPDOWN
-$('[dropdown=toggle]').click(function (event) {
-    event.preventDefault()
-    var content = $(this).next('[dropdown=content]')
-    $('[dropdown=content]').not(content).removeClass('open')
-    content.toggleClass('open')
-})
-
-$(document).click(function (event) {
-    if (!$(event.target).closest('.dropdown').length) {
-        $('[dropdown=content]').removeClass('open')
-    }
-})
-
 // COLLAPSE
 $('[collapse-id]').not('.collapse').on('click', function () {
     var collapseId = $(this).attr('collapse-id')
@@ -225,6 +110,121 @@ $('.accordion').each(function () {
                 $(this).text('keyboard_arrow_down')
             } else if (otherIcon === 'remove') {
                 $(this).text('add')
+            }
+        })
+    })
+})
+
+// POPUP
+$('.popup').prepend('<div pop-action="close-overlay"></div>')
+$('[pop-id]').not('.popup').on('click', function () {
+    var popId = $(this).attr('pop-id')
+    $('.popup[pop-id=' + popId + ']').addClass('open')
+})
+
+$('[pop-action=close],[pop-action=close-overlay]').on('click', function () {
+    $('.popup').removeClass('open')
+})
+
+// TOOLTIP
+$('[tooltip]').each(function () {
+    var tooltip = $(this)
+
+    tooltip.hover(
+        function () {
+            var tooltipText = tooltip.attr('tooltip')
+            var tooltipWrapper = $('<div class="tooltip-text">' + tooltipText + '</div>')
+
+            tooltip.append(tooltipWrapper)
+            setTimeout(function () {
+                tooltipWrapper.addClass('show')
+            }, 100)
+        },
+        function () {
+            var tooltipWrapper = tooltip.find('.tooltip-text')
+
+            if ($(this).text().indexOf('Copied') !== -1) {
+                return
+            }
+
+            tooltipWrapper.removeClass('show')
+            setTimeout(function () {
+                tooltipWrapper.remove()
+            }, 150)
+        }
+    )
+})
+
+// DROPDOWN
+$('[dropdown=toggle]').click(function (event) {
+    event.preventDefault()
+    var content = $(this).next('[dropdown=content]')
+    $('[dropdown=content]').not(content).removeClass('open')
+    content.toggleClass('open')
+})
+
+$(document).click(function (event) {
+    if (!$(event.target).closest('.dropdown').length) {
+        $('[dropdown=content]').removeClass('open')
+    }
+})
+
+// COPY BTN
+$('.copyBtn').each(function () {
+    var copyBtn = $(this)
+    var copyBtnText = copyBtn.attr('copy-content') || ''
+
+    copyBtn.on('click', function () {
+        navigator.clipboard.writeText(copyBtnText).then(() => {
+            var tooltip = copyBtn.find('.tooltip-text')
+
+            if (tooltip.length) {
+                tooltip.text('Copied' + (copyBtn.hasClass('text-copied') ? ' : ' + copyBtnText : ''))
+            }
+
+            tooltip.addClass('show')
+
+            setTimeout(() => {
+                tooltip.removeClass('show')
+                setTimeout(() => {
+                    tooltip.remove()
+                }, 300)
+            }, 2000)
+        })
+    })
+})
+
+// COPY GROUP
+$('.copyGroup a[copy="trigger"]').each(function () {
+    var copyTrigger = $(this)
+
+    copyTrigger.on('click', function () {
+        var inputField = $(this).closest('.copyGroup').find('[copy="content"]')
+        var textToCopy
+
+        if (inputField.is('input') || inputField.is('textarea')) {
+            textToCopy = inputField.val()
+        } else {
+            textToCopy = inputField.text()
+        }
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            var copyNotification = $('<div class="copy-notif"><span class="material-symbol fill text-success">check_circle</span><span>Copied to Clipboard</span></div>')
+
+            $('body').append(copyNotification)
+            setTimeout(function () {
+                copyNotification.addClass('show')
+            }, 100)
+
+            setTimeout(function () {
+                copyNotification.removeClass('show')
+                setTimeout(function () {
+                    copyNotification.remove()
+                }, 500)
+            }, 2000)
+
+            if (inputField.is('input') || inputField.is('textarea')) {
+                inputField.trigger('focus').select()
             }
         })
     })

@@ -4,11 +4,11 @@
 			fill: #4287f5;
 		}
 
-		@media (prefers-color-scheme: dark) {
+		<!-- @media (prefers-color-scheme: dark) {
 			svg {
 				fill: #fefefe;
 			}
-		}
+		} -->
 	</style>
 	<g transform="matrix(1,0,0,1,-80,-80)">
 		<g transform="matrix(0.707107,-0.707107,0.707107,0.707107,-737.3,1780)">

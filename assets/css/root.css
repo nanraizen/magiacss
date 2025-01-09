@@ -30,7 +30,7 @@
     --g4x: #9999A3;
     --g5x: #777781;
     --g6x: #52525B;
-    --odd: rgba(24 24 27 / .04);
+    --odd: rgba(24 24 27 / .1);
 
     --default: #ECEFF1;
     --primary: #448AFF;
@@ -42,7 +42,7 @@
 
     --white: #FFFFFF;
     --black: #272727;
-    
+
     --default-darker: #9CA3AF;
     --primary-darker: #1565C0;
     --success-darker: #2E7D32;
@@ -50,45 +50,45 @@
     --warning-darker: #FF6F00;
     --danger-darker: #C62828;
 
-    --primary05: #448AFF05;
-    --primary15: #448AFF15;
-    --primary25: #448AFF25;
-    --primary35: #448AFF35;
-    --primary45: #448AFF45;
+    --primary1: #448AFF05;
+    --primary2: #448AFF15;
+    --primary3: #448AFF25;
+    --primary4: #448AFF35;
+    --primary5: #448AFF45;
 
-    --success05: #22C55E05;
-    --success15: #22C55E15;
-    --success25: #22C55E25;
-    --success35: #22C55E35;
-    --success45: #22C55E45;
+    --success1: #22C55E05;
+    --success2: #22C55E15;
+    --success3: #22C55E25;
+    --success4: #22C55E35;
+    --success5: #22C55E45;
 
-    --info05: #00BCD405;
-    --info15: #00BCD415;
-    --info25: #00BCD425;
-    --info35: #00BCD435;
-    --info45: #00BCD445;
+    --info1: #00BCD405;
+    --info2: #00BCD415;
+    --info3: #00BCD425;
+    --info4: #00BCD435;
+    --info5: #00BCD445;
 
-    --warning05: #FB923C05;
-    --warning15: #FB923C15;
-    --warning25: #FB923C25;
-    --warning35: #FB923C35;
-    --warning45: #FB923C45;
+    --warning1: #FB923C05;
+    --warning2: #FB923C15;
+    --warning3: #FB923C25;
+    --warning4: #FB923C35;
+    --warning5: #FB923C45;
 
-    --danger05: #EF444405;
-    --danger15: #EF444415;
-    --danger25: #EF444425;
-    --danger35: #EF444435;
-    --danger45: #EF444445;
+    --danger1: #EF444405;
+    --danger2: #EF444415;
+    --danger3: #EF444425;
+    --danger4: #EF444435;
+    --danger5: #EF444445;
 
-    --dark05: #3F3F4605;
-    --dark15: #3F3F4615;
-    --dark25: #3F3F4625;
-    --dark35: #3F3F4635;
-    --dark45: #3F3F4645;
+    --dark1: #3F3F4605;
+    --dark2: #3F3F4615;
+    --dark3: #3F3F4625;
+    --dark4: #3F3F4635;
+    --dark5: #3F3F4645;
 
-    --white05: #FFFFFF05;
-    --white15: #FFFFFF15;
-    --white25: #FFFFFF25;
-    --white35: #FFFFFF35;
-    --white45: #FFFFFF45;
+    --white1: #FFFFFF05;
+    --white2: #FFFFFF15;
+    --white3: #FFFFFF25;
+    --white4: #FFFFFF35;
+    --white5: #FFFFFF45;
 }
