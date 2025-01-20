@@ -530,11 +530,11 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .font-1{font-family:var(--font)}
 .font-2{font-family:var(--font-2)}
 .font-3{font-family:var(--font-3)}
-.text-warning{color:var(--warning)!important}
-.text-danger{color:var(--danger)!important}
-.text-info{color:var(--info)!important}
-.text-success{color:var(--success)!important}
-.text-primary{color:var(--primary)!important}
+.text-primary,.text-primary:hover{color:var(--primary)!important}
+.text-info,.text-info:hover{color:var(--info)!important}
+.text-success,.text-success:hover{color:var(--success)!important}
+.text-warning,.text-warning:hover{color:var(--warning)!important}
+.text-danger,.text-danger:hover{color:var(--danger)!important}
 .text-g3x{color:var(--g3x)!important}
 .text-g4x{color:var(--g4x)!important}
 .text-g5x{color:var(--g5x)!important}
