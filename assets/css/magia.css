@@ -226,7 +226,7 @@ form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,l
 .btn-img.new::after{box-shadow:0 0 0 2px var(--bg);content:' ';display:block;position:absolute;z-index:1;top:0;left:0;width:8px;height:8px;background-color:var(--danger);border-radius:50%}
 /* FORMS */
 .form-group{display:flex;flex-direction:column;gap:8px;position:relative}
-.form-group:nth-child(n+2){margin-top:16px}
+.form-group:nth-of-type(n+2){margin-top:16px}
 .form-group label{transition:.15s ease}
 .form-group label:not([class*='form-opt-']){font-size:14px;font-weight:var(--font-semibold)}
 .form-group label+.help-block{margin-top:-7px;padding-bottom:1px}
@@ -235,7 +235,7 @@ form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,l
 .form-group [class*='form-opt-'] label span:not([class]){margin-top:0;padding-top:1px}
 .form-hz .form-group{flex-direction:row}
 .form-hz .form-group>*{margin:auto 0}
-.form-hz .form-group label{padding-right:calc(24px - 8px);text-align:right}
+.form-hz .form-group label:not([class*='form-opt-']){padding-right:calc(24px - 8px);text-align:right}
 .form-control{height:48px;padding:0 16px;transition:.15s ease;background-color:transparent;border:1px solid var(--g3x);border-radius:12px}
 .form-control:hover,.form-control-textarea:hover{border-color:var(--g4x)}
 .form-control:focus,.form-control-textarea:focus-within{border-color:var(--primary)}
@@ -438,6 +438,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 [dropdown=content] nav .btn::after{pointer-events:none;content:' ';display:block;position:absolute;top:50%;left:calc(-16px);opacity:0;transform:translateY(-50%);width:2px;height:24px;transition:.15s ease;background-color:var(--primary);border-radius:0 6px 6px 0}
 [dropdown=content] nav .btn.active{font-variation-settings:'FILL'1;font-weight:var(--font-semibold);color:var(--primary)!important}
 [dropdown=content] nav .btn.active::after,[dropdown=content] nav .btn:hover::after{opacity:1}
+[dropdown=content] nav .btn.title{pointer-events:none;font-weight:var(--font-semibold)}
 [dropdown=content] li{display:block!important}
 .dropdown-success [dropdown=content]{border-color:var(--success)}
 .dropdown-success [dropdown=content] nav .btn:hover{background-color:var(--success2);color:var(--success)!important}
@@ -514,7 +515,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .formatting ul.check li::before{content:'\e5ca';left:-10px;font-size:24px;color:var(--success)}
 .formatting ul.check li.times::before{content:'\e5cd';color:var(--danger)}
 .formatting ul.icons li::before{display:none}
-.formatting ul.icons li .material-symbol,.formatting ul.icons li .fab{font-variation-settings:'FILL'1;position:absolute;left:-10px;line-height:1!important}
+.formatting ul.icons li .material-symbol,.formatting ul.icons li .fab{font-variation-settings:'FILL'1;position:absolute;left:-10px;width:24px;line-height:1!important;text-align:center}
 .formatting ul.divider li:not(:last-child){margin-bottom:16px;padding-bottom:calc(16px + 1px)}
 .formatting ul.divider li:not(:last-child)::after{content:' ';display:block;position:absolute;bottom:0;left:28px;right:0;border-bottom:1px solid var(--g3x)}
 .formatting ol:first-child,.formatting p:first-child{margin-top:0}
@@ -549,14 +550,14 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .text-20{font-size:20px!important}
 .text-22{font-size:22px!important}
 .text-24{font-size:24px!important}
-.text-left{text-align:left}
-.text-center{text-align:center}
-.text-right{text-align:right}
-.text-justify{text-align:justify}
+.text-left{text-align:left!important}
+.text-center{text-align:center!important}
+.text-right{text-align:right!important}
+.text-justify{text-align:justify!important}
 .text-lowercase{text-transform:lowercase!important}
 .text-uppercase{text-transform:uppercase!important}
 .text-capitalize{text-transform:capitalize!important}
-.text-hl:hover{text-decoration:underline}
+.text-hl:hover{text-decoration:underline!important}
 .text-break{word-break:break-all}
 .text-lh-1{line-height:1!important}
 /* IMAGES 2 */
