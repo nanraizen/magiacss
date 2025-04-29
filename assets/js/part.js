@@ -3,7 +3,7 @@ $('.side-navbar').html(`
         <li class="list-group-item"><a href="/index.html">Home</a></li>
         <li class="divider"></li>
         <li class="list-group-item"><a href="/alert.html">Alert</a></li>
-        <li class="list-group-item"><a href="/button.html">Buttons</a></li>
+        <li class="list-group-item"><a href="/button.html">Button</a></li>
         <li class="list-group-item"><a href="/card.html">Card Set</a></li>
         <li class="list-group-item"><a href="/form.html">Form</a></li>
         <li class="list-group-item"><a href="/formatting.html">Formatting</a></li>

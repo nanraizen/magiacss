@@ -7,6 +7,7 @@
 @import url('root.css');
 
 /* REPLACEMENT WAJIB */
+.btn{border-radius:12px}
 .btn>span:not([class]){padding-bottom:1px}
 .tooltip-text{border-bottom:1px solid transparent}
 
