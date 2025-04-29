@@ -8,13 +8,14 @@
 
 /* REPLACEMENT WAJIB */
 .btn{border-radius:12px}
-.btn>span:not([class]){padding-bottom:1px}
+.btn>span:not([class]){padding-bottom:0}
+.btn-36>span:not([class]){padding-bottom:1px}
 .tooltip-text{border-bottom:1px solid transparent}
 
 /* TEMPLATE */
 body{padding-left:280px!important}
-main{padding-bottom:60px}
-.page-title{padding:60px 0 48px}
+main{padding:0 36px 120px}
+.page-title{padding:60px 36px 48px}
 .container{max-width:1000px}
 .side-navbar{position:fixed;top:0;bottom:0;left:0;width:280px;padding:24px;background-color:var(--g0x);border-right:1px solid var(--g3x)}
 .side-navbar .list-group-item{display:flex;position:relative;padding:0;background-color:transparent;border:0;border-radius:0}
