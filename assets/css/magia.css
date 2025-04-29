@@ -466,3 +466,14 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .navtabs.underline.j-fluid a span:not([class]){margin-right:auto;margin-left:unset}
 .navtabs-content>*,.navtabs.underline.j-fluid a::before{display:none}
 .navtabs-content>*[active=true]{display:block!important}
+/* COLLAPSE */
+.collapse{position:relative;overflow:hidden;max-height:0;transition:max-height .25s var(--cubic)}
+[accordion=toggle]{max-height:unset;transition:.15s ease}
+[accordion=content]{position:relative;opacity:0;overflow:hidden;max-height:0;transition:max-height .25s var(--cubic),opacity 0.25s ease}
+[accordion=content].expand{opacity:1;max-height:unset}
+/* COPY */
+.copyBtn{overflow:unset}
+.copyGroup input{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.copy-notif{box-shadow:var(--shadow-2);backdrop-filter:blur(3px);pointer-events:none;display:flex;gap:12px;position:fixed;z-index:1000;bottom:-100px;left:24px;opacity:0;padding:16px 20px;transition:all 0.25s var(--cubic);background-color:var(--dark);border-radius:12px;color:#fff}
+.copy-notif>*{margin:auto 0}
+.copy-notif.show{bottom:24px;opacity:1}
