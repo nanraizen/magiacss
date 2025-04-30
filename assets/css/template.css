@@ -10,7 +10,6 @@
 .btn{border-radius:12px}
 .btn>span:not([class]){padding-bottom:0}
 .btn-36>span:not([class]){padding-bottom:1px}
-.tooltip-text{border-bottom:1px solid transparent}
 
 /* TEMPLATE */
 body{padding-left:280px!important}
