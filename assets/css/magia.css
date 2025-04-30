@@ -459,7 +459,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .popup.confirm .popup-content h5{font-size:16px}
 .popup.confirm .popup-content p{margin-top:4px;font-size:14px;color:var(--g4x)}
 /* TOOLTIP */
-.tooltip-text{box-shadow:var(--shadow);backdrop-filter:blur(3px);line-height:1.4;font-weight:var(--font-regular);pointer-events:none;display:block;position:absolute;z-index:9999;visibility:hidden;opacity:0;width:max-content;max-width:240px;padding:9px 12px 8px;transition:.15s ease;background-color:var(--backdrop);border-radius:8px;font-size:12px;color:var(--white);text-align:center;word-wrap:break-word}
+.tooltip-text{box-shadow:var(--shadow);backdrop-filter:blur(3px);pointer-events:none;display:block;position:absolute;z-index:9999;visibility:hidden;opacity:0;width:max-content;max-width:240px;padding:9px 12px 8px;transition:.15s ease;background-color:var(--backdrop);border-radius:8px;font-size:12px;font-weight:var(--font-regular);line-height:1.4;color:var(--white);text-align:center;word-wrap:break-word}
 .tooltip-text.show{visibility:visible;opacity:1}
 .tooltip-text:empty{visibility:hidden;opacity:0}
 [tooltip]{overflow:unset}
@@ -471,22 +471,23 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 [tooltip-position="top-left"] .tooltip-text{bottom:100%;left:0;margin:0 0 8px 0}
 [tooltip-position="bottom-right"] .tooltip-text{top:100%;left:100%;transform:translateX(-100%);margin:8px 0 0 0}
 [tooltip-position="bottom-left"] .tooltip-text{top:100%;left:0;margin:8px 0 0 0}
-[tooltip-position="left-top"] .tooltip-text{top:0;right:100%;left:unset;bottom:unset;margin:0 8px 0 0}
-[tooltip-position="left-bottom"] .tooltip-text{bottom:0;right:100%;left:unset;top:unset;margin:0 8px 0 0}
+[tooltip-position="left-top"] .tooltip-text{top:0;bottom:unset;left:unset;right:100%;margin:0 8px 0 0}
+[tooltip-position="left-bottom"] .tooltip-text{top:unset;bottom:0;left:unset;right:100%;margin:0 8px 0 0}
 [tooltip-position="right-top"] .tooltip-text{top:0;left:100%;margin:0 0 0 8px}
-[tooltip-position="right-bottom"] .tooltip-text{bottom:0;top:unset;left:100%;margin:0 0 0 8px}
+[tooltip-position="right-bottom"] .tooltip-text{top:unset;bottom:0;left:100%;margin:0 0 0 8px}
 /* COPY */
 .copyBtn{overflow:unset}
 .copyIcon{position:relative}
-.copyIcon::after{content:'\e173';font-family:var(--font-msr);font-size:14px;font-variation-settings:'FILL'1;font-weight:var(--font-regular);position:absolute;right:-20px;top:3px}
+.copyIcon::after{font-variation-settings:'FILL'1;content:'\e173';position:absolute;top:3px;right:-20px;font-size:14px;font-family:var(--font-msr);font-weight:var(--font-regular)}
 .copyIcon.hover::after{opacity:0;transition:.15s ease}
 .copyIcon.hover:hover:after{opacity:1}
 .copyGroup input{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .copy-notif{box-shadow:var(--shadow-2);backdrop-filter:blur(3px);pointer-events:none;display:flex;gap:12px;position:fixed;z-index:1000;bottom:-100px;left:24px;opacity:0;padding:16px 20px;transition:all 0.25s var(--cubic);background-color:var(--dark);border-radius:12px;color:#fff}
 .copy-notif>*{margin:auto 0}
-.copy-notif.show{bottom:24px;opacity:1}.dropdown{position:relative}
+.copy-notif.show{bottom:24px;opacity:1}
+.dropdown{position:relative}
 /* DROPDOWN */
-[dropdown=content]{box-shadow:var(--shadow);position:absolute;z-index:98;top:100%;visibility:hidden;opacity:0;min-width:280px;margin-top:calc(8px + 24px);padding:16px;transition:.2s var(--cubic);background-color:var(--bg)!important;color:var(--txt)!important;border:2px solid var(--primary);border-radius:12px;font-size:14px}
+[dropdown=content]{box-shadow:var(--shadow);position:absolute;z-index:98;top:100%;visibility:hidden;opacity:0;min-width:280px;margin-top:calc(8px + 24px);padding:16px;transition:.2s var(--cubic);background-color:var(--bg)!important;border:2px solid var(--primary);border-radius:12px;font-size:14px;color:var(--txt)!important}
 [dropdown=content].open{visibility:visible;opacity:1;margin-top:8px}
 [dropdown=content] nav{display:flex;flex-direction:column;flex-wrap:wrap}
 [dropdown=content] nav hr{margin:16px 0}
