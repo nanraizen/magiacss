@@ -208,7 +208,6 @@ form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,l
 .btn-group>.btn-light:nth-child(n+2),.btn-group>.btn-outline:nth-child(n+2){margin-left:-1px}
 .btn-group-outline{display:flex;gap:2px;padding:2px;background-color:transparent!important;border:2px solid var(--primary);border-radius:16px}
 .btn-group-outline.pill{border-radius:100px}
-.btn-group-outline.btn-group-warning{border-color:var(--warning)}
 .btn-img{gap:16px;position:relative;overflow:unset;height:unset;padding:0;border-radius:0;color:var(--txt)!important}
 .btn-img>*{display:flex;flex-direction:column;flex-wrap:wrap}
 .btn-img img{min-width:48px;max-width:160px;height:unset;max-height:48px}
@@ -230,13 +229,13 @@ form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,l
 .btn-white:hover{color:var(--primary)!important}
 .btn-light{border:1px solid}
 .btn-light.btn-primary,.btn-outline.btn-primary,.img-ava-outline.img-primary{background-color:var(--primary4);border-color:var(--primary);color:var(--primary-dark)!important}
-.btn-light.btn-success,.btn-outline.btn-success,.img-ava-outline.img-success,.dropdown-success [dropdown=content]{background-color:var(--success4);border-color:var(--success);color:var(--success-dark)!important}
-.btn-light.btn-info,.btn-outline.btn-info,.img-ava-outline.img-info,.dropdown-info [dropdown=content]{background-color:var(--info4);border-color:var(--info);color:var(--info-dark)!important}
-.btn-light.btn-warning,.btn-outline.btn-warning,.img-ava-outline.img-warning,.dropdown-warning [dropdown=content]{background-color:var(--warning4);border-color:var(--warning);color:var(--warning-dark)!important}
-.btn-light.btn-danger,.btn-outline.btn-danger,.img-ava-outline.img-danger,.dropdown-danger [dropdown=content]{background-color:var(--danger4);border-color:var(--danger);color:var(--danger-dark)!important}
-.btn-light.btn-pink,.btn-outline.btn-pink,.img-ava-outline.img-pink,.dropdown-pink [dropdown=content]{background-color:var(--pink4);border-color:var(--pink);color:var(--pink-dark)!important}
-.btn-light.btn-purple,.btn-outline.btn-purple,.img-ava-outline.img-purple,.dropdown-purple [dropdown=content]{background-color:var(--purple4);border-color:var(--purple);color:var(--purple-dark)!important}
-.btn-light.btn-brown,.btn-outline.btn-brown,.img-ava-outline.img-brown,.dropdown-brown [dropdown=content]{background-color:var(--brown4);border-color:var(--brown);color:var(--brown-dark)!important}
+.btn-light.btn-success,.btn-outline.btn-success,.btn-group-outline.btn-group-success,.img-ava-outline.img-success,.dropdown-success [dropdown=content]{background-color:var(--success4);border-color:var(--success);color:var(--success-dark)!important}
+.btn-light.btn-info,.btn-outline.btn-info,.btn-group-outline.btn-group-info,.img-ava-outline.img-info,.dropdown-info [dropdown=content]{background-color:var(--info4);border-color:var(--info);color:var(--info-dark)!important}
+.btn-light.btn-warning,.btn-outline.btn-warning,.btn-group-outline.btn-group-warning,.img-ava-outline.img-warning,.dropdown-warning [dropdown=content]{background-color:var(--warning4);border-color:var(--warning);color:var(--warning-dark)!important}
+.btn-light.btn-danger,.btn-outline.btn-danger,.btn-group-outline.btn-group-danger,.img-ava-outline.img-danger,.dropdown-danger [dropdown=content]{background-color:var(--danger4);border-color:var(--danger);color:var(--danger-dark)!important}
+.btn-light.btn-pink,.btn-outline.btn-pink,.btn-group-outline.btn-group-pink,.img-ava-outline.img-pink,.dropdown-pink [dropdown=content]{background-color:var(--pink4);border-color:var(--pink);color:var(--pink-dark)!important}
+.btn-light.btn-purple,.btn-outline.btn-purple,.btn-group-outline.btn-group-purple,.img-ava-outline.img-purple,.dropdown-purple [dropdown=content]{background-color:var(--purple4);border-color:var(--purple);color:var(--purple-dark)!important}
+.btn-light.btn-brown,.btn-outline.btn-brown,.btn-group-outline.btn-group-brown,.img-ava-outline.img-brown,.dropdown-brown [dropdown=content]{background-color:var(--brown4);border-color:var(--brown);color:var(--brown-dark)!important}
 .btn-light.btn-white{background-color:rgba(255 255 255 / .2);color:var(--bg)!important}
 .btn-light:not(:hover){border-color:transparent}
 .btn-outline{background-color:transparent!important;border:1px solid}
