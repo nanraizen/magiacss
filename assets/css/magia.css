@@ -459,7 +459,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .popup.confirm .popup-content h5{font-size:16px}
 .popup.confirm .popup-content p{margin-top:4px;font-size:14px;color:var(--g4x)}
 /* TOOLTIP */
-.tooltip-text{box-shadow:var(--shadow);backdrop-filter:blur(3px);pointer-events:none;display:block;position:absolute;z-index:9999;visibility:hidden;opacity:0;width:max-content;max-width:240px;padding:9px 12px 8px;transition:.15s ease;background-color:var(--backdrop);border-radius:8px;font-size:12px;font-weight:var(--font-regular);line-height:1.4;color:var(--white);text-align:center;word-wrap:break-word}
+.tooltip-text{box-shadow:var(--shadow);backdrop-filter:blur(3px);pointer-events:none;display:block;position:absolute;z-index:9999;visibility:hidden;opacity:0;width:max-content;max-width:240px;padding:8px 12px;transition:.15s ease;background-color:var(--backdrop);border-radius:8px;font-size:12px;font-weight:var(--font-regular);line-height:1.4;color:var(--white);text-align:center;word-wrap:break-word}
 .tooltip-text.show{visibility:visible;opacity:1}
 .tooltip-text:empty{visibility:hidden;opacity:0}
 [tooltip]{overflow:unset}
