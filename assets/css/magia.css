@@ -170,9 +170,9 @@ form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,l
 .btn>*{display:block;position:relative;z-index:1;margin:auto 0}
 .btn>img,.btn>svg{width:auto;height:24px}
 .btn>span:not([class]){flex:1}
-.btn b{display:block;position:relative;top:-2px;margin-bottom:6px;line-height:1.2}
+.btn b{display:block;position:relative;top:-2px;margin-bottom:4px;line-height:1.2}
 .btn b:first-child:last-child{top:unset;margin-bottom:unset}
-.btn small+b{top:unset;bottom:-2px;margin-top:6px;margin-bottom:unset}
+.btn small+b{top:unset;bottom:-2px;margin-top:4px;margin-bottom:unset}
 .btn small{display:block;position:relative;font-size:12px;color:var(--g5x)}
 .btn::before{content:' ';display:block;position:absolute;z-index:0;top:0;bottom:0;left:0;right:0;opacity:0;transition:.15s ease;background-color:var(--dark)}
 .btn.btn:not(.btn-light):not(.btn-outline):not(.btn-img):not(.btn-tsp):hover::before{opacity:.085}
