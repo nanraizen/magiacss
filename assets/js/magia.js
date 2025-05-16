@@ -32,15 +32,15 @@ $('.navtabs[tab-id]').each(function () {
     var tabsId = navtabs.attr('tab-id')
     var content = $('.navtabs-content[tab-id=' + tabsId + ']')
 
-    navtabs.find('a').click(function (e) {
+    navtabs.find('a[tab-a]').click(function (e) {
         e.preventDefault()
-        var targetId = $(this).attr('href').substring(1)
+        var targetId = $(this).attr('tab-a').substring(1)
 
         if ($(this).hasClass('btn')) {
             navtabs.find('a.btn').removeClass('btn-primary').addClass('btn-default')
             $(this).removeClass('btn-default').addClass('btn-primary')
         } else {
-            navtabs.find('a').removeAttr('active')
+            navtabs.find('a[tab-a]').removeAttr('active')
             $(this).attr('active', 'true')
         }
 
@@ -169,6 +169,47 @@ $(document).click(function (event) {
     }
 })
 
+// COPY PLUGIN
+function copyTextFromElement(el) {
+    let textToCopy = ''
+
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        textToCopy = el.value
+    } else {
+        textToCopy = el.textContent
+    }
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        const notif = document.createElement('div')
+        notif.className = 'copy-notif'
+        notif.innerHTML = '<span class="material-symbol fill text-success">check_circle</span><span>Copied to Clipboard</span>'
+
+        document.body.appendChild(notif)
+
+        setTimeout(() => {
+            notif.classList.add('show')
+        }, 100)
+
+        setTimeout(() => {
+            notif.classList.remove('show')
+            setTimeout(() => {
+                notif.remove()
+            }, 500)
+        }, 2000)
+
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.focus()
+            el.select()
+        }
+    })
+}
+
+// COPY GROUP
+$('.copyGroup a[copy="trigger"]').on('click', function () {
+    const inputField = $(this).closest('.copyGroup').find('[copy="content"]')[0]
+    copyTextFromElement(inputField)
+})
+
 // COPY BTN
 $('.copyBtn').each(function () {
     var copyBtn = $(this)
@@ -190,42 +231,6 @@ $('.copyBtn').each(function () {
                     tooltip.remove()
                 }, 300)
             }, 2000)
-        })
-    })
-})
-
-// COPY GROUP
-$('.copyGroup a[copy="trigger"]').each(function () {
-    var copyTrigger = $(this)
-
-    copyTrigger.on('click', function () {
-        var inputField = $(this).closest('.copyGroup').find('[copy="content"]')
-        var textToCopy
-
-        if (inputField.is('input') || inputField.is('textarea')) {
-            textToCopy = inputField.val()
-        } else {
-            textToCopy = inputField.text()
-        }
-
-        navigator.clipboard.writeText(textToCopy).then(() => {
-            var copyNotification = $('<div class="copy-notif"><span class="material-symbol fill text-success">check_circle</span><span>Copied to Clipboard</span></div>')
-
-            $('body').append(copyNotification)
-            setTimeout(function () {
-                copyNotification.addClass('show')
-            }, 100)
-
-            setTimeout(function () {
-                copyNotification.removeClass('show')
-                setTimeout(function () {
-                    copyNotification.remove()
-                }, 500)
-            }, 2000)
-
-            if (inputField.is('input') || inputField.is('textarea')) {
-                inputField.trigger('focus').select()
-            }
         })
     })
 })
