@@ -79,7 +79,7 @@ h4{font-size:20px}
 h5{font-size:18px}
 h6{font-size:16px;line-height:1.6}
 a,a:focus,a:hover{transition:.15s ease;color:var(--txt);text-decoration:none}
-a:hover{color:var(--primary)}
+a:hover{color:var(--primary-dark)}
 a:not([href]):not([tabindex]){transition:.15s ease;cursor:pointer;color:inherit}
 a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{transition:.15s ease;color:inherit}
 a:not([href]):not([tabindex]):focus{outline:0;transition:.15s ease}
