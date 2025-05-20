@@ -330,9 +330,9 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .input-group.pill .form-control,.input-group.pill .input-group-addon{border-radius:48px}
 .input-group>*{position:relative;margin:auto 0!important}
 .input-group>*:nth-child(n+2){margin-left:-1px!important}
-.input-group>*:not(:last-child):not(:first-child),.input-group>*:not(:last-child):not(:first-child) *{border-radius:0}
-.input-group>*:first-child:not(:last-child),.input-group>*:first-child:not(:last-child) *{border-top-right-radius:0;border-bottom-right-radius:0}
-.input-group>*:last-child:not(:first-child),.input-group>*:last-child:not(:first-child) *{border-top-left-radius:0;border-bottom-left-radius:0}
+.input-group>*:not(:last-child):not(:first-child),.input-group>*:not(:last-child):not(:first-child) *{border-radius:0!important}
+.input-group>*:first-child:not(:last-child),.input-group>*:first-child:not(:last-child) *{border-top-right-radius:0!important;border-bottom-right-radius:0!important}
+.input-group>*:last-child:not(:first-child),.input-group>*:last-child:not(:first-child) *{border-top-left-radius:0!important;border-bottom-left-radius:0!important}
 .input-group>*:not(.input-group-addon):hover{z-index:1}
 .input-group>*:not(.input-group-addon):focus{z-index:2}
 .input-group>.btn:not(.btn-outline){margin-left:0!important}
