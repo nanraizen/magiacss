@@ -167,7 +167,7 @@ form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,l
 .table-wrap th,.table-wrap td{padding-right:16px!important;padding-left:16px!important}
 /* BUTTON */
 .btn{display:inline-flex;gap:12px;position:relative;overflow:hidden;min-width:0;height:48px;padding:0 16px;transition:.15s ease;line-height:1;color:var(--bg)!important;text-decoration:none!important}
-.btn>*{display:flex;position:relative;z-index:1;margin:auto 0}
+.btn>*{display:block;position:relative;z-index:1;margin:auto 0}
 .btn>img,.btn>svg{width:auto;height:24px}
 .btn>span:not([class]){flex:1}
 .btn b{display:block;position:relative;top:-2px;margin-bottom:4px;line-height:1.2}
