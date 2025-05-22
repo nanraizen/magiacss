@@ -531,7 +531,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 /* FORMATTING */
 .formatting{overflow-wrap:anywhere;line-height:2;text-align:justify;word-break:normal}
 .formatting a{color:var(--primary)}
-.formatting a:hover{text-decoration:underline}
+.formatting a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
 .formatting p{margin:16px 0}
 .formatting p:empty::before{display:none}
 .formatting hr{margin:36px 0;border-top-width:1px}
