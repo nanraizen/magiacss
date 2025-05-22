@@ -539,7 +539,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .formatting h1,.formatting h2,.formatting h3{padding-top:4px}
 .formatting h1:not(:first-child),.formatting h2:not(:first-child),.formatting h3:not(:first-child),.formatting h4:not(:first-child){margin-top:28px}
 .formatting h1:not(:last-child),.formatting h2:not(:last-child),.formatting h3:not(:last-child),.formatting h4:not(:last-child){margin-bottom:20px}
-.formatting img{box-shadow:var(--img-shadow);display:block;height:auto;margin:24px 0;border-radius:8px}
+.formatting>img,.formatting *:not(.btn)>img{box-shadow:var(--img-shadow);display:block;height:auto;margin:24px 0;border-radius:8px}
 .formatting figure{margin:24px 0}
 .formatting figure img{border-radius:12px}
 .formatting p img{margin:0;border-radius:0}
