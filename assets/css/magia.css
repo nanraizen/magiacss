@@ -92,7 +92,7 @@ form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,l
 .material-symbol.new::after{box-shadow:0 0 0 2px var(--bg);content:' ';display:block;position:absolute;top:0;right:0;width:8px;height:8px;background-color:var(--danger);border-radius:50%}
 /* UTILITIES */
 .fab{font-size:24px}
-.event-none{pointer-events:none}
+.pointer-none{pointer-events:none}
 .grid{display:grid}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr)}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr)}
