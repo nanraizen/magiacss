@@ -240,17 +240,17 @@ form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,l
 .btn-light:not(:hover){border-color:transparent}
 .btn-outline{background-color:transparent!important;border:1px solid}
 .btn-outline.btn-default{border-color:var(--g3x);color:var(--txt)!important}
-.btn-outline.btn-default:hover{background-color:var(--primary3);border-color:var(--primary);color:var(--primary)!important}
+.btn-outline.btn-default:hover{background-color:var(--primary2);border-color:var(--primary);color:var(--primary)!important}
 .btn-outline.btn-dark{color:var(--dark)!important}
-.btn-outline.btn-dark:hover{background-color:var(--dark3)!important}
-.btn-outline.btn-primary:hover{background-color:var(--primary3)!important}
-.btn-outline.btn-success:hover{background-color:var(--success3)!important}
-.btn-outline.btn-info:hover{background-color:var(--info3)!important}
-.btn-outline.btn-warning:hover{background-color:var(--warning3)!important}
-.btn-outline.btn-danger:hover{background-color:var(--danger3)!important}
-.btn-outline.btn-pink:hover{background-color:var(--pink3)!important}
-.btn-outline.btn-purple:hover{background-color:var(--purple3)!important}
-.btn-outline.btn-brown:hover{background-color:var(--brown3)!important}
+.btn-outline.btn-dark:hover{background-color:var(--dark2)!important}
+.btn-outline.btn-primary:hover{background-color:var(--primary2)!important}
+.btn-outline.btn-success:hover{background-color:var(--success2)!important}
+.btn-outline.btn-info:hover{background-color:var(--info2)!important}
+.btn-outline.btn-warning:hover{background-color:var(--warning2)!important}
+.btn-outline.btn-danger:hover{background-color:var(--danger2)!important}
+.btn-outline.btn-pink:hover{background-color:var(--pink2)!important}
+.btn-outline.btn-purple:hover{background-color:var(--purple2)!important}
+.btn-outline.btn-brown:hover{background-color:var(--brown2)!important}
 .btn-outline.btn-white{color:var(--bg)!important}
 .btn-outline.btn-white:hover{background-color:rgba(255 255 255 / .1)!important}
 .btn-tsp{background-color:transparent!important;color:var(--txt)!important}
@@ -354,7 +354,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 [class*='form-opt-']:hover .mark{border-color:var(--g4x)}
 [class*='form-opt-']:has(input:disabled){pointer-events:none;color:var(--g4x);text-decoration:line-through}
 [class*='form-opt-']:has(input:disabled) .mark{background-color:var(--g1x)}
-[class*='form-opt-'] input:checked+.mark{background-color:var(--primary3);border-color:var(--primary)}
+[class*='form-opt-'] input:checked+.mark{background-color:var(--primary2);border-color:var(--primary)}
 [class*='form-opt-'] input:checked+.mark::after{opacity:1}
 [class*='form-opt-'] input:checked+.mark::before{top:-1px;opacity:1}
 .form-opt-radio .mark,.form-opt-radio .mark::after{border-radius:50%}
@@ -499,22 +499,20 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 [dropdown=content] nav .btn{display:flex;gap:12px;overflow:unset;height:40px;padding:0 12px;border-radius:6px;color:var(--txt)!important}
 [dropdown=content] nav .btn-img{height:auto;padding-top:9px;padding-bottom:9px}
 [dropdown=content] nav .btn::before{display:none!important}
-[dropdown=content] nav .btn:hover{background-color:var(--primary3);color:var(--primary)!important}
+[dropdown=content] nav .btn:hover{background-color:var(--primary2);color:var(--primary)!important}
 [dropdown=content] nav .btn::after{pointer-events:none;content:' ';display:block;position:absolute;top:50%;left:calc(-16px);opacity:0;transform:translateY(-50%);width:2px;height:24px;transition:.15s ease;background-color:var(--primary);border-radius:0 6px 6px 0}
 [dropdown=content] nav .btn.active{font-variation-settings:'FILL'1;font-weight:var(--font-semibold);color:var(--primary)!important}
 [dropdown=content] nav .btn.active:not(:hover){background-color:transparent!important}
 [dropdown=content] nav .btn.active::after,[dropdown=content] nav .btn:hover::after{opacity:1}
 [dropdown=content] nav .btn.title{pointer-events:none;font-weight:var(--font-semibold)}
-[dropdown=content] nav .btn b{margin-bottom:2px}
-[dropdown=content] nav .btn small+b{margin-top:2px}
 [dropdown=content] li{display:block!important}
-.dropdown-success [dropdown=content] nav .btn:hover,.dropdown-success [dropdown=content] nav .btn.active{background-color:var(--success3);color:var(--success)!important}
-.dropdown-info [dropdown=content] nav .btn:hover,.dropdown-info [dropdown=content] nav .btn.active{background-color:var(--info3);color:var(--info)!important}
-.dropdown-warning [dropdown=content] nav .btn:hover,.dropdown-warning [dropdown=content] nav .btn.active{background-color:var(--warning3);color:var(--warning)!important}
-.dropdown-danger [dropdown=content] nav .btn:hover,.dropdown-danger [dropdown=content] nav .btn.active{background-color:var(--danger3);color:var(--danger)!important}
-.dropdown-pink [dropdown=content] nav .btn:hover,.dropdown-pink [dropdown=content] nav .btn.active{background-color:var(--pink3);color:var(--pink)!important}
-.dropdown-purple [dropdown=content] nav .btn:hover,.dropdown-purple [dropdown=content] nav .btn.active{background-color:var(--purple3);color:var(--purple)!important}
-.dropdown-brown [dropdown=content] nav .btn:hover,.dropdown-brown [dropdown=content] nav .btn.active{background-color:var(--brown3);color:var(--brown)!important}
+.dropdown-success [dropdown=content] nav .btn:hover,.dropdown-success [dropdown=content] nav .btn.active{background-color:var(--success2);color:var(--success)!important}
+.dropdown-info [dropdown=content] nav .btn:hover,.dropdown-info [dropdown=content] nav .btn.active{background-color:var(--info2);color:var(--info)!important}
+.dropdown-warning [dropdown=content] nav .btn:hover,.dropdown-warning [dropdown=content] nav .btn.active{background-color:var(--warning2);color:var(--warning)!important}
+.dropdown-danger [dropdown=content] nav .btn:hover,.dropdown-danger [dropdown=content] nav .btn.active{background-color:var(--danger2);color:var(--danger)!important}
+.dropdown-pink [dropdown=content] nav .btn:hover,.dropdown-pink [dropdown=content] nav .btn.active{background-color:var(--pink2);color:var(--pink)!important}
+.dropdown-purple [dropdown=content] nav .btn:hover,.dropdown-purple [dropdown=content] nav .btn.active{background-color:var(--purple2);color:var(--purple)!important}
+.dropdown-brown [dropdown=content] nav .btn:hover,.dropdown-brown [dropdown=content] nav .btn.active{background-color:var(--brown2);color:var(--brown)!important}
 .dropup [dropdown=content]{top:unset;bottom:100%;margin-top:0;margin-bottom:calc(8px + 24px)}
 .dropup [dropdown=content].open{margin-bottom:8px}
 .dropup .caret::before{content:'\e316'}
