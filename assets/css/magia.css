@@ -496,7 +496,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 [dropdown=content].open{visibility:visible;opacity:1;margin-top:8px}
 [dropdown=content] nav{display:flex;flex-direction:column;flex-wrap:wrap}
 [dropdown=content] nav hr{margin:16px 0}
-[dropdown=content] nav .btn{display:flex;gap:12px;overflow:unset;height:40px;padding:0 12px;border-radius:6px;color:var(--txt)!important}
+[dropdown=content] nav .btn{display:flex;gap:12px;overflow:unset;height:40px;padding:0 16px;border-radius:6px;color:var(--txt)!important}
 [dropdown=content] nav .btn-img{height:auto;padding-top:9px;padding-bottom:9px}
 [dropdown=content] nav .btn::before{display:none!important}
 [dropdown=content] nav .btn:hover{background-color:var(--primary2);color:var(--primary)!important}
