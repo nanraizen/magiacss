@@ -55,7 +55,7 @@ input[type='number']{-moz-appearance:textfield;appearance:textfield}
 details,menu{display:block}
 summary{display:list-item}
 template,[hidden]{display:none}
-blockquote{position:relative;margin:24px 0;padding:24px 32px;background-color:var(--dark1);border:1px solid var(--g3x);border-radius:12px;font-size:28px;font-family:var(--font-3);line-height:1.4;color:var(--dark)}
+blockquote{position:relative;margin:24px 0;padding:20px 24px;background-color:var(--dark1);border:1px solid var(--g3x);border-radius:12px;color:var(--dark)}
 blockquote::after{content:' ';display:block;position:absolute;top:50%;left:-3px;transform:translateY(-50%);width:5px;height:24px;background-color:var(--primary);border-radius:3px}
 blockquote::before{font-variation-settings:'FILL'1;content:'\e244';position:absolute;z-index:-1;bottom:12px;right:-12px;opacity:.05;font-size:7em;font-family:var(--font-msr);line-height:.5}
 blockquote footer{position:relative;padding-left:24px}
