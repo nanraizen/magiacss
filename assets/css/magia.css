@@ -532,7 +532,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .formatting a:hover{text-decoration:underline}
 .formatting p{margin:16px 0}
 .formatting p:empty::before{display:none}
-.formatting hr{margin:36px 0;border-top-width:1px}
+.formatting hr{margin:28px 0;border-top-width:1px}
 .formatting br{content:' ';display:block;margin-top:8px}
 .formatting h1,.formatting h2,.formatting h3{padding-top:4px}
 .formatting h1:not(:first-child),.formatting h2:not(:first-child),.formatting h3:not(:first-child),.formatting h4:not(:first-child){margin-top:20px}
@@ -542,14 +542,14 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .formatting p img{margin:0;border-radius:0}
 .formatting p img:not(:last-child){margin-bottom:12px}
 .formatting table{margin:16px 0}
-.formatting ul>li{position:relative;padding-left:28px}
+.formatting ul>li{position:relative;padding-left:24px}
 .formatting ul>li::before{font-variation-settings:'FILL'1;content:'\ef4a';position:absolute;top:12px;left:4px;font-size:8px;font-family:var(--font-msr);line-height:1;color:var(--g3x)}
 .formatting ul.icon>li{padding-left:36px}
 .formatting ul.icon>li::before{display:none}
 .formatting ul.icon>li>span:first-child{position:absolute;left:0;width:24px;text-align:center}
 .formatting ul.icon>li .material-symbol{font-variation-settings:'FILL'1;top:2px}
 .formatting ul.icon>li .fab{top:5px;font-size:20px}
-.formatting ol>li{position:relative;padding-left:28px;counter-increment:num}
+.formatting ol>li{position:relative;padding-left:24px;counter-increment:num}
 .formatting ol>li::before{content:counter(num)'.';position:absolute;left:0;font-weight:var(--font-regular)}
 .formatting ol>li ol>li{padding-left:36px;counter-increment:subnum}
 .formatting ol>li ol>li::before{content:counter(num)'.'counter(subnum)'.'}
