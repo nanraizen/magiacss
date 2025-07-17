@@ -84,7 +84,7 @@ a:not([href]):not([tabindex]){transition:.15s ease;cursor:pointer;color:inherit}
 a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{transition:.15s ease;color:inherit}
 a:not([href]):not([tabindex]):focus{outline:0;transition:.15s ease}
 a:not([href]):not([tabindex]):hover{color:var(--primary)}
-form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,label,br,thead,tfoot,.material-symbol,.btn,.help-block,.navbar,.navtabs,.popup-header,.lock-selection{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+form,img,*:not([disabled]):not([readonly])::placeholder,button,textarea,select,label,br,thead,tfoot,.material-symbol,.btn,.help-block,.navbar nav a,.navtabs,.popup-header,.lock-selection{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 /* MATERIAL SYMBOLS */
 .material-symbol{direction:ltr;font-feature-settings:'liga';-webkit-font-smoothing:antialiased;display:inline-block;font-size:24px;font-family:var(--font-msr);font-style:normal;font-weight:var(--font-regular)!important;line-height:1!important;text-decoration:none!important;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap}
 .material-symbol.fill{font-variation-settings:'FILL'1!important}
