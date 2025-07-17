@@ -347,7 +347,7 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 [class*='form-opt-']{display:flex;gap:12px;position:relative;min-height:24px;padding:0!important;transition:.1s ease;cursor:pointer;font-weight:var(--font-regular)}
 [class*='form-opt-']:hover{color:var(--primary-dark)}
 [class*='form-opt-'] input{position:absolute;z-index:-1;opacity:0}
-[class*='form-opt-'] span:not([class]){margin-top:1px;margin-bottom:auto;font-weight:var(--font-regular)}
+[class*='form-opt-'] span:not([class]){flex:1;margin-top:1px;margin-bottom:auto;font-weight:var(--font-regular)}
 [class*='form-opt-'] .mark{content:' ';display:block;position:relative;width:24px;height:24px;transition:.1s ease;border:1px solid var(--g3x);border-radius:8px}
 [class*='form-opt-'] .mark::before{font-variation-settings:'wght'700;content:'\f88b';position:absolute;top:5px;left:-1px;opacity:0;width:24px;height:24px;transition:.1s ease;font-size:25px;font-family:var(--font-msr);line-height:1;color:var(--primary)}
 [class*='form-opt-'] .mark::after{box-shadow:0 0 0 2px inset var(--primary);content:' ';display:block;position:absolute;top:-1px;left:-1px;opacity:0;width:24px;height:24px;transition:.1s ease;border-radius:8px}
@@ -521,9 +521,9 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .dropdown-fluid [dropdown=content]{left:0;right:0;min-width:unset}
 /* BREADCRUMB */
 .breadcrumb{display:flex;flex-wrap:wrap;gap:4px;line-height:1;list-style:none}
-.breadcrumb>li{flex-shrink:1;position:relative;overflow:hidden;max-width:240px;margin:auto 0;text-overflow:ellipsis;white-space:nowrap;line-height:normal}
+.breadcrumb>li{flex-shrink:1;position:relative;overflow:hidden;max-width:240px;margin:auto 0;line-height:normal;text-overflow:ellipsis;white-space:nowrap}
 .breadcrumb>li .material-symbol{font-variation-settings:'FILL'1;display:flex}
-.breadcrumb>li.active{font-weight:var(--font-semibold)}
+.breadcrumb>li.active,.breadcrumb>li:last-child{pointer-events:none;font-weight:var(--font-semibold)}
 .breadcrumb>li:nth-child(n+2){padding-left:24px}
 .breadcrumb>li+li:before{content:'\e5cc';position:absolute;top:50%;left:0;transform:translateY(-50%);font-size:20px;font-family:var(--font-msr);font-weight:var(--font-regular);line-height:1;color:var(--g4x)}
 /* FORMATTING */
@@ -603,6 +603,6 @@ textarea.form-control.auto-height{resize:none;overflow:hidden}
 .text-lowercase{text-transform:lowercase!important}
 .text-uppercase{text-transform:uppercase!important}
 .text-capitalize{text-transform:capitalize!important}
-.text-hl:hover{text-decoration:underline!important;text-underline-offset:6px}
+.text-hl:hover{text-underline-offset:6px;text-decoration:underline!important}
 .text-break{word-break:break-all}
 .text-lh-1{line-height:1!important}
